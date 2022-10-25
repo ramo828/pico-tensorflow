@@ -4,6 +4,6 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/boards/include/boards/pico.h"
+#include "/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/boards/include/boards/pico.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:

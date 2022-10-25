@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/tools/cmake_install.cmake")
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/cmake_install.cmake")
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/docs/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/tools/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

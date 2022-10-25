@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/docs
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

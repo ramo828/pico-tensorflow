@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/rp2040
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/rp2040
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
 
 endif()
 

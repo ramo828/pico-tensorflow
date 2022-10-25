@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/cmake_install.cmake")
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/pico-tflmicro/cmake_install.cmake")
-  include("/home/ramo828/Belgeler/PICO/pico-mnist/tf_code/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/pico-tflmicro/cmake_install.cmake")
+  include("/home/ramo828/Belgeler/PICO/pico-tensorflow/tf_code/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ramo828/Belgeler/PICO/pico-mnist/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ramo828/Belgeler/PICO/pico-tensorflow/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

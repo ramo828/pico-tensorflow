@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/rp2_common/hardware_claim
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/rp2_common/hardware_claim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

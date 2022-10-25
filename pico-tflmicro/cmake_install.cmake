@@ -1,4 +1,4 @@
-# Install script for directory: /home/ramo828/Belgeler/PICO/pico-mnist/pico-tflmicro
+# Install script for directory: /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-tflmicro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

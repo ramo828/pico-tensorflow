@@ -1,6 +1,8 @@
 set(binaryName "pico-tensorflow")
 add_executable(${binaryName}
 	main.cpp
+	#conv_mnist_quant.h
+	#conv_mnist_quant.cpp
 )
 
 pico_enable_stdio_usb(${binaryName} 1)

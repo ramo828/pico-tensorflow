@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ramo828/Belgeler/PICO/pico-mnist
+CMAKE_SOURCE_DIR = /home/ramo828/Belgeler/PICO/pico-tensorflow
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ramo828/Belgeler/PICO/pico-mnist
+CMAKE_BINARY_DIR = /home/ramo828/Belgeler/PICO/pico-tensorflow
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(CMAKE_COMMAND) -E cmake_progress_start /home/ramo828/Belgeler/PICO/pico-mnist/CMakeFiles /home/ramo828/Belgeler/PICO/pico-mnist/pico-sdk/src/rp2_common/boot_stage2//CMakeFiles/progress.marks
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ramo828/Belgeler/PICO/pico-mnist/CMakeFiles 0
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(CMAKE_COMMAND) -E cmake_progress_start /home/ramo828/Belgeler/PICO/pico-tensorflow/CMakeFiles /home/ramo828/Belgeler/PICO/pico-tensorflow/pico-sdk/src/rp2_common/boot_stage2//CMakeFiles/progress.marks
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ramo828/Belgeler/PICO/pico-tensorflow/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/clean
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/preinstall
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/preinstall
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ bs2_default: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/rule
 
 # fast build rule for target.
 bs2_default/fast:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.
 
 # fast build rule for target.
 bs2_default_bin/fast:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 .PHONY : bs2_default_bin/fast
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/CMakeFil
 
 # fast build rule for target.
 bs2_default_padded_checksummed_asm/fast:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 .PHONY : bs2_default_padded_checksummed_asm/fast
 
 boot2_w25q080.obj: boot2_w25q080.S.obj
@@ -163,7 +163,7 @@ boot2_w25q080.obj: boot2_w25q080.S.obj
 
 # target to build an object file
 boot2_w25q080.S.obj:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj
 .PHONY : boot2_w25q080.S.obj
 
 # Help Target
@@ -189,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ramo828/Belgeler/PICO/pico-mnist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ramo828/Belgeler/PICO/pico-tensorflow && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
