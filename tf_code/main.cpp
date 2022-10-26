@@ -14,12 +14,25 @@ limitations under the License.
 ==============================================================================*/
 
 #include "main_functions.h"
-
+#include <iostream>
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/adc.h"
 // This is the default main used on systems that have the standard C entry
 // point. Other devices (for example FreeRTOS or ESP32) that have different
 // requirements for entry code (like an app_main function) should specialize
 // this main.cc file in a target-specific subfolder.
 int main(int argc, char* argv[]) {
+   stdio_init_all();
+    gpio_init(20);
+    gpio_set_dir(20, GPIO_OUT);
+
+    /* Initialize hardware AD converter, enable onboard temperature sensor and
+     *   select its channel (do this once for efficiency, but beware that this
+     *   is a global operation). */
+    adc_init();
+   
+
   setup();
   while (true) {
     loop();

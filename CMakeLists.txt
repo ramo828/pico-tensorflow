@@ -11,6 +11,6 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_subdirectory(pico-tflmicro)
-
+add_subdirectory(ss_oled build)
 add_subdirectory(tf_code)
 

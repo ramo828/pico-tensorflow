@@ -1,3 +1,0 @@
-/home/ramo828/Belgeler/PICO/pico-mnist/pico-tflmicro/examples/hello_world/pioasm/CMakeFiles/pioasm.dir
-/home/ramo828/Belgeler/PICO/pico-mnist/pico-tflmicro/examples/hello_world/pioasm/CMakeFiles/edit_cache.dir
-/home/ramo828/Belgeler/PICO/pico-mnist/pico-tflmicro/examples/hello_world/pioasm/CMakeFiles/rebuild_cache.dir

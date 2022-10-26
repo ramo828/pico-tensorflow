@@ -14,7 +14,11 @@ limitations under the License.
 ==============================================================================*/
 
 #include "main_functions.h"
-
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include "pico/stdlib.h"
+#include "hardware/pwm.h"
 #include "tensorflow/lite/micro/all_ops_resolver.h"
 #include "constants.h"
 #include "model.h"
@@ -23,6 +27,19 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "tensorflow/lite/version.h"
+#include "ss_oled.hpp"
+
+// RPI Pico
+#define SDA_PIN 4
+#define SCL_PIN 5
+#define PICO_I2C i2c0
+#define I2C_SPEED 100 * 1000
+
+
+#define OLED_WIDTH 128
+#define OLED_HEIGHT 64
+
+
 
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
@@ -32,13 +49,28 @@ tflite::MicroInterpreter* interpreter = nullptr;
 TfLiteTensor* input = nullptr;
 TfLiteTensor* output = nullptr;
 int inference_count = 0;
-
 constexpr int kTensorArenaSize = 2000;
 uint8_t tensor_arena[kTensorArenaSize];
 }  // namespace
+using namespace std;
+
+
+static uint8_t ucBuffer[1024];
+uint8_t uc[8];
+int i, j;
+char szTemp[32];
+picoSSOLED myOled(OLED_128x64, 0x3c, 0, 0, PICO_I2C, SDA_PIN, SCL_PIN, I2C_SPEED);
+int rc = myOled.init() ;
 
 // The name of this function is important for Arduino compatibility.
 void setup() {
+   myOled.set_back_buffer(ucBuffer);
+    if (rc != OLED_NOT_FOUND)
+  { 
+    myOled.fill(0,1);
+    myOled.write_string(0,0,0,(char *)"**************** ", FONT_8x8, 0, 1);
+    myOled.write_string(0,0,7,(char *)"**************** ", FONT_8x8, 0, 1);
+  }
   // Set up logging. Google style is to avoid globals or statics because of
   // lifetime uncertainty, but since this has a trivial destructor it's okay.
   // NOLINTNEXTLINE(runtime-global-variables)
@@ -107,11 +139,22 @@ void loop() {
   int8_t y_quantized = output->data.int8[0];
   // Dequantize the output from integer to floating-point
   float y = (y_quantized - output->params.zero_point) * output->params.scale;
+  printf("X: %f\nY: %f\n",x,y);
+    string numX = to_string(x);
+    string numY = to_string(y);
+const char *numXchr = numX.c_str();
+const char *numYchr = numY.c_str();
+  if (rc != OLED_NOT_FOUND)
+  { 
+    // myOled.fill(0,1);
+    myOled.write_string(0,8,3,(char *)numXchr, FONT_8x8, 0, 1);
+    myOled.write_string(0,8,4,(char *)numYchr, FONT_8x8, 0, 1);
+  }
+      // sleep_ms(50);
 
   // Output the results. A custom HandleOutput function can be implemented
   // for each supported hardware target.
   HandleOutput(error_reporter, x, y);
-
   // Increment the inference_counter, and reset it if we have reached
   // the total number per cycle
   inference_count += 1;

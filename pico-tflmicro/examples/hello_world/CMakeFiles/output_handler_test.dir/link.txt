@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/output_handler_test.dir/output_handler_test.cpp.o CMakeFiles/output_handler_test.dir/rp2/output_handler.cpp.o -o output_handler_test  -lpico-tflmicro -lpico-tflmicro_test 

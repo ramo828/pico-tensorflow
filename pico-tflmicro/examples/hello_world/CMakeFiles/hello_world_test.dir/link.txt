@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/hello_world_test.dir/hello_world_test.cpp.o CMakeFiles/hello_world_test.dir/model.cpp.o -o hello_world_test  -lpico-tflmicro -lpico-tflmicro_test 
